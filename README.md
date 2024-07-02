@@ -73,7 +73,6 @@ Here are some screenshots of the application:
 
 - `index.html`: The main HTML file containing the structure of the web application.
 - `code.js`: JavaScript file with all the functionalities and event handlers.
-- `style.css`: CSS file for styling the application.
 
 ## Author
 
