@@ -1,11 +1,1892 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online-shop</title>
-</head>
-<body>
-  <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/uhcPOSCda3ny1iUD8Yc9vYAxw3I-NMX1e3HxMbBegyg/embed?nosource"></iframe>
-</body>
+<html>
+  <head>
+    <title>Online Shop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href="applab/fa-brands-400.woff2" as="font" />
+    <link rel="preload" href="applab/fa-solid-900.woff2" as="font" />
+    <link rel="preload" href="applab/fa-regular-400.woff2" as="font" />
+    <link rel="preload" href="applab/fa-v4compatibility.woff2" as="font" />
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script>
+      function setExportConfig(config) {
+        window.EXPORT_OPTIONS = config;
+      }
+    </script>
+    <script src="https://studio.code.org/projects/applab/xDnl0XFYiyEvdhjrfpn83pwUAya-7TtdHykUT6WHsvs/export_config?script_call=setExportConfig"></script>
+    <script src="https://helpful-melomakarona-f8467c.netlify.app/applab-api.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <link rel="stylesheet" href="https://helpful-melomakarona-f8467c.netlify.app/applab.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      id="divApplab"
+      class="appModern running"
+      style="width: 320px; height: 450px; display: block"
+    >
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="cherryVanilla"
+        id="start_screen"
+        style="
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 245, 245);
+          display: block;
+        "
+      >
+        <select
+          id="big_catagory_dropdown"
+          style="
+            width: 200px;
+            height: 30px;
+            margin: 0px;
+            border-style: solid;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23fff5f5%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E');
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 0px 30px 0px 15px;
+            position: absolute;
+            left: 55px;
+            top: 180px;
+          "
+          data-mod-padding="1"
+        >
+          <option>Please select a Catagory</option></select
+        ><select
+          id="item_dropdown"
+          style="
+            width: 200px;
+            height: 30px;
+            margin: 0px;
+            border-style: solid;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23fff5f5%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E');
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 0px 30px 0px 15px;
+            position: absolute;
+            left: 55px;
+            top: 230px;
+          "
+          data-mod-padding="1"
+        >
+          <option>Please select an item</option></select
+        ><button
+          id="add_to_cart_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 45px;
+            width: 160px;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 70px;
+            top: 338px;
+          "
+        >
+          Add to Cart</button
+        ><button
+          id="checkout_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 100px;
+            top: 395px;
+          "
+        >
+          Checkout</button
+        ><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(165, 25, 40);
+            background-color: rgba(241, 226, 212, 0.01);
+            border-color: rgb(165, 25, 40);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 26px;
+            padding: 2px 15px;
+            width: 180px;
+            height: 30px;
+            position: absolute;
+            left: 70px;
+            top: 15px;
+            text-align: center;
+          "
+          id="Name_label"
+          >Online shop</label
+        ><button
+          id="shop_section"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 20px;
+            top: 65px;
+          "
+        >
+          Shop</button
+        ><button
+          id="lottery_section_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 200px;
+            top: 65px;
+          "
+        >
+          Lottery
+        </button>
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="items_descrption"
+          style="
+            width: 145px;
+            height: 60px;
+            border-style: solid;
+            background-color: rgb(241, 226, 212);
+            color: rgb(165, 25, 40);
+            border-color: rgb(206, 206, 204);
+            border-radius: 5px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 55px;
+            top: 268px;
+            margin: 0px;
+          "
+        ></div>
+        <select
+          id="how_much"
+          style="
+            width: 80px;
+            height: 35px;
+            margin: 0px;
+            border-style: solid;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23fff5f5%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E');
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 0px 30px 0px 15px;
+            position: absolute;
+            left: 210px;
+            top: 280px;
+          "
+        >
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option></select
+        ><img
+          src="/blockly/media/1x1.gif"
+          data-canonical-image-url=""
+          data-image-type=""
+          data-object-fit="contain"
+          id="items_image"
+          style="
+            height: 70px;
+            width: 75px;
+            border-style: solid;
+            border-width: 0px;
+            border-color: rgb(0, 0, 0);
+            border-radius: 0px;
+            position: absolute;
+            left: 122px;
+            top: 103px;
+            margin: 0px;
+            object-fit: contain;
+            font-family: 'object-fit: contain;';
+          "
+        />
+      </div>
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="default"
+        id="cart_list_screen"
+        style="
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 255, 255);
+          display: none;
+        "
+      >
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="cart_list"
+          style="
+            width: 220px;
+            height: 30px;
+            border-style: solid;
+            background-color: rgb(242, 242, 242);
+            color: rgb(77, 87, 95);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 45px;
+            top: 15px;
+            margin: 0px;
+            text-align: center;
+          "
+        >
+          Online Shop
+        </div>
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="text_area1"
+          style="
+            width: 100px;
+            height: 40px;
+            border-style: solid;
+            background-color: rgb(242, 242, 242);
+            color: rgb(77, 87, 95);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 10px;
+            top: 125px;
+            margin: 0px;
+          "
+        >
+          Item
+        </div>
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="text_area2"
+          style="
+            width: 100px;
+            height: 35px;
+            border-style: solid;
+            background-color: rgb(242, 242, 242);
+            color: rgb(77, 87, 95);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 115px;
+            top: 130px;
+            margin: 0px;
+          "
+        >
+          Quantity
+        </div>
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="text_area3"
+          style="
+            width: 95px;
+            height: 40px;
+            border-style: solid;
+            background-color: rgb(242, 242, 242);
+            color: rgb(77, 87, 95);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 220px;
+            top: 125px;
+            margin: 0px;
+          "
+        >
+          Price
+        </div>
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="subtotal_text"
+          style="
+            width: 175px;
+            height: 55px;
+            border-style: solid;
+            background-color: rgb(242, 242, 242);
+            color: rgb(77, 87, 95);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 140px;
+            top: 365px;
+            margin: 0px;
+          "
+        >
+          Subtotal:
+        </div>
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="taxes_box"
+          style="
+            width: 175px;
+            height: 40px;
+            border-style: solid;
+            background-color: rgb(242, 242, 242);
+            color: rgb(77, 87, 95);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 140px;
+            top: 325px;
+            margin: 0px;
+          "
+        >
+          Taxes:
+        </div>
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="cart_item_list"
+          style="
+            width: 105px;
+            height: 135px;
+            border-style: solid;
+            background-color: rgb(242, 242, 242);
+            color: rgb(77, 87, 95);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 5px;
+            top: 175px;
+            margin: 0px;
+          "
+        ></div>
+        <button
+          id="back_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(255, 164, 0);
+            color: rgb(255, 255, 255);
+            border-color: rgb(77, 87, 95);
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 20px;
+            top: 335px;
+          "
+        >
+          Back</button
+        ><button
+          id="continue_checkout_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(255, 164, 0);
+            color: rgb(255, 255, 255);
+            border-color: rgb(77, 87, 95);
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 20px;
+            top: 385px;
+          "
+        >
+          Continue Checkout</button
+        ><input
+          id="remove_input"
+          style="
+            margin: 0px;
+            width: 240px;
+            height: 40px;
+            border-style: solid;
+            color: rgb(77, 87, 95);
+            background-color: rgb(242, 242, 242);
+            border-color: rgb(77, 87, 95);
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 40px;
+            top: 50px;
+          "
+          placeholder="Enter the item number to remove it"
+        /><button
+          id="delete_item_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 30px;
+            width: 85px;
+            background-color: rgb(255, 164, 0);
+            color: rgb(255, 255, 255);
+            border-color: rgb(77, 87, 95);
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 115px;
+            top: 95px;
+          "
+        >
+          Delete
+        </button>
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="cart_quantity_list"
+          style="
+            width: 105px;
+            height: 135px;
+            border-style: solid;
+            background-color: rgb(242, 242, 242);
+            color: rgb(77, 87, 95);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 110px;
+            top: 175px;
+            margin: 0px;
+            text-align: center;
+          "
+        ></div>
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="cart_price_list"
+          style="
+            width: 105px;
+            height: 135px;
+            border-style: solid;
+            background-color: rgb(242, 242, 242);
+            color: rgb(77, 87, 95);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 215px;
+            top: 175px;
+            margin: 0px;
+          "
+        ></div>
+      </div>
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="default"
+        id="checkOut_screen"
+        style="
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 255, 255);
+          display: none;
+        "
+      >
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="text_area4"
+          style="
+            width: 210px;
+            height: 50px;
+            border-style: solid;
+            background-color: rgb(242, 242, 242);
+            color: rgb(77, 87, 95);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px 15px;
+            position: absolute;
+            left: 55px;
+            top: 10px;
+            margin: 0px;
+            text-align: center;
+            font-size: 24px;
+          "
+          data-mod-fontsize="1"
+        >
+          Online Shop
+        </div>
+        <button
+          id="back_to_cart_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 40px;
+            width: 135px;
+            background-color: rgb(255, 164, 0);
+            color: rgb(255, 255, 255);
+            border-color: rgb(77, 87, 95);
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 10px;
+            top: 75px;
+          "
+        >
+          Back to Cart</button
+        ><button
+          id="pay_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(255, 164, 0);
+            color: rgb(255, 255, 255);
+            border-color: rgb(77, 87, 95);
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 105px;
+            top: 405px;
+          "
+        >
+          Pay
+        </button>
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="text_area5"
+          style="
+            width: 155px;
+            height: 170px;
+            border-style: solid;
+            background-color: rgb(242, 242, 242);
+            color: rgb(77, 87, 95);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 25px;
+            top: 145px;
+            margin: 0px;
+            text-align: right;
+          "
+        >
+          Purchase of Items
+          <div><br /></div>
+          <div>Subtotal:</div>
+          <div><br /></div>
+          <div>Promotion</div>
+          <div><br /></div>
+          <div>Tax: &nbsp; &nbsp;GST:</div>
+          <div><br /></div>
+          <div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;PST:</div>
+          <div><br /></div>
+        </div>
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="overview_output"
+          style="
+            width: 120px;
+            height: 170px;
+            border-style: solid;
+            background-color: rgb(242, 242, 242);
+            color: rgb(77, 87, 95);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 180px;
+            top: 145px;
+            margin: 0px;
+            text-align: right;
+          "
+        ></div>
+        <label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(77, 87, 95);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            padding: 2px 15px;
+            width: 135px;
+            height: 35px;
+            position: absolute;
+            left: 25px;
+            top: 320px;
+            font-size: 24px;
+          "
+          id="label5"
+          data-mod-fontsize="1"
+          >TOTAL: </label
+        ><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(77, 87, 95);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 18px;
+            padding: 2px 15px;
+            width: 124px;
+            height: 23px;
+            position: absolute;
+            left: 175px;
+            top: 120px;
+          "
+          id="label6"
+          data-mod-fontsize="1"
+          >Overview</label
+        ><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(77, 87, 95);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            padding: 2px 15px;
+            width: 135px;
+            height: 35px;
+            position: absolute;
+            left: 170px;
+            top: 320px;
+            font-size: 24px;
+          "
+          id="total_output"
+          data-mod-fontsize="1"
+        ></label
+        ><input
+          id="credit_card_input"
+          style="
+            margin: 0px;
+            width: 305px;
+            height: 30px;
+            border-style: solid;
+            color: rgb(77, 87, 95);
+            background-color: rgb(242, 242, 242);
+            border-color: rgb(77, 87, 95);
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 5px;
+            top: 365px;
+            text-align: left;
+          "
+          placeholder="Please enter your 16-digit Credit Card numbers"
+        /><input
+          id="promo_code_input"
+          style="
+            margin: 0px;
+            width: 140px;
+            height: 40px;
+            border-style: solid;
+            color: rgb(77, 87, 95);
+            background-color: rgb(242, 242, 242);
+            border-color: rgb(77, 87, 95);
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 165px;
+            top: 75px;
+          "
+          placeholder="6 digit promo code"
+        />
+      </div>
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="default"
+        id="receipt_screen"
+        style="
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 255, 255);
+          display: none;
+        "
+      >
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="text_area10"
+          style="
+            width: 230px;
+            height: 60px;
+            border-style: solid;
+            background-color: rgb(242, 242, 242);
+            color: rgb(77, 87, 95);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 45px;
+            top: 80px;
+            margin: 0px;
+            text-align: center;
+          "
+        >
+          Thank you for your Purchase
+        </div>
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="text_area11"
+          style="
+            width: 205px;
+            height: 115px;
+            border-style: solid;
+            background-color: rgb(242, 242, 242);
+            color: rgb(77, 87, 95);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 60px;
+            top: 185px;
+            margin: 0px;
+            text-align: center;
+          "
+        >
+          want to shop again?
+          <div></div>
+          <div><br /></div>
+          <div>Click the button below</div>
+        </div>
+        <button
+          id="back_to_main_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 55px;
+            width: 110px;
+            background-color: rgb(255, 164, 0);
+            color: rgb(255, 255, 255);
+            border-color: rgb(77, 87, 95);
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 100px;
+            top: 335px;
+          "
+        >
+          Back to main page
+        </button>
+      </div>
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="cherryVanilla"
+        id="lottery_screen"
+        style="
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 245, 245);
+          display: none;
+        "
+      >
+        <button
+          id="get_code_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 100px;
+            top: 345px;
+          "
+        >
+          Get a Code
+        </button>
+        <div
+          contenteditable="false"
+          class="textArea"
+          id="lottery_description"
+          style="
+            width: 200px;
+            height: 100px;
+            border-style: solid;
+            background-color: rgb(241, 226, 212);
+            color: rgb(165, 25, 40);
+            border-color: rgb(206, 206, 204);
+            border-radius: 5px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 10px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 55px;
+            top: 135px;
+            margin: 0px;
+            text-align: center;
+          "
+        >
+          Welcome to the lottery system! For every minutes, you can get one
+          chance to draw a 50% OFF promotion code until you got one! You can
+          ONLY get one code each Shopping! Good luck!
+        </div>
+        <label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(165, 25, 40);
+            background-color: rgba(241, 226, 212, 0);
+            border-color: rgb(165, 25, 40);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            padding: 2px 15px;
+            width: 90px;
+            height: 40px;
+            position: absolute;
+            left: 50px;
+            top: 80px;
+            text-align: center;
+            font-size: 28px;
+          "
+          id="hours_label"
+          >00 :</label
+        ><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(165, 25, 40);
+            background-color: rgba(241, 226, 212, 0);
+            border-color: rgb(165, 25, 40);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            padding: 2px 15px;
+            width: 70px;
+            height: 40px;
+            position: absolute;
+            left: 185px;
+            top: 80px;
+            text-align: center;
+            font-size: 28px;
+          "
+          id="seconds_label"
+          >00</label
+        ><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(165, 25, 40);
+            background-color: rgba(241, 226, 212, 0);
+            border-color: rgb(165, 25, 40);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            padding: 2px 15px;
+            width: 90px;
+            height: 40px;
+            position: absolute;
+            left: 120px;
+            top: 80px;
+            text-align: center;
+            font-size: 28px;
+          "
+          id="minutes_label"
+          >01 :</label
+        ><button
+          id="back_to_main_page_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 40px;
+            width: 120px;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+          "
+        >
+          Back to main page
+        </button>
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="promotion_code_output"
+          style="
+            width: 200px;
+            height: 75px;
+            border-style: solid;
+            background-color: rgb(241, 226, 212);
+            color: rgb(165, 25, 40);
+            border-color: rgb(206, 206, 204);
+            border-radius: 5px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 16px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 55px;
+            top: 250px;
+            margin: 0px;
+          "
+        ></div>
+        <label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(165, 25, 40);
+            background-color: rgba(241, 226, 212, 0);
+            border-color: rgb(165, 25, 40);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            padding: 2px 15px;
+            width: 70px;
+            height: 40px;
+            position: absolute;
+            top: 80px;
+            text-align: center;
+            font-size: 28px;
+            left: 178px;
+          "
+          id="sec_backup"
+          class="design-mode-hidden"
+          >0</label
+        >
+      </div>
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="cherryVanilla"
+        id="admin_screen"
+        style="
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 245, 245);
+          display: none;
+        "
+      >
+        <button
+          id="change_items_info_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 255px;
+            width: 155px;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 5px;
+            top: 90px;
+          "
+          class="design-mode-hidden"
+        >
+          Change Items info</button
+        ><button
+          id="add_items_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 255px;
+            width: 150px;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 165px;
+            top: 90px;
+          "
+          class="design-mode-hidden"
+        >
+          Add New Items</button
+        ><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(165, 25, 40);
+            background-color: rgb(241, 226, 212);
+            border-color: rgb(165, 25, 40);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 26px;
+            padding: 2px 15px;
+            width: 235px;
+            height: 35px;
+            position: absolute;
+            left: 45px;
+            top: 15px;
+            text-align: center;
+          "
+          id="Admin_label"
+          data-mod-fontsize="1"
+          >Hello Admin</label
+        ><button
+          id="admin_page_back_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 45px;
+            width: 130px;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 95px;
+            top: 380px;
+          "
+          class="design-mode-hidden"
+        >
+          Back to Shop</button
+        ><input
+          id="username_input"
+          style="
+            margin: 0px;
+            width: 235px;
+            height: 40px;
+            border-style: solid;
+            color: rgb(165, 25, 40);
+            background-color: rgb(241, 226, 212);
+            border-color: rgb(165, 25, 40);
+            border-radius: 5px;
+            border-width: 1px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 45px;
+            top: 105px;
+          "
+          placeholder="Please enter the username"
+        /><input
+          id="pass_input"
+          style="
+            margin: 0px;
+            width: 235px;
+            height: 40px;
+            border-style: solid;
+            color: rgb(165, 25, 40);
+            background-color: rgb(241, 226, 212);
+            border-color: rgb(165, 25, 40);
+            border-radius: 5px;
+            border-width: 1px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 45px;
+            top: 175px;
+          "
+          placeholder="Please enter the password"
+        /><button
+          id="login_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 110px;
+            top: 355px;
+          "
+        >
+          Login
+        </button>
+        <div
+          contenteditable="false"
+          class="textArea"
+          id="verificationcode_display"
+          style="
+            width: 150px;
+            height: 45px;
+            border-style: solid;
+            background-color: rgb(241, 226, 212);
+            color: rgb(165, 25, 40);
+            border-color: rgb(206, 206, 204);
+            border-radius: 5px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 85px;
+            top: 230px;
+            margin: 0px;
+          "
+        ></div>
+        <input
+          id="verificationcode_input"
+          style="
+            margin: 0px;
+            width: 250px;
+            height: 35px;
+            border-style: solid;
+            color: rgb(165, 25, 40);
+            background-color: rgb(241, 226, 212);
+            border-color: rgb(165, 25, 40);
+            border-radius: 5px;
+            border-width: 1px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            top: 295px;
+            left: 38px;
+          "
+          placeholder="Please enter the verification code"
+        /><img
+          data-canonical-image-url="icon://fa-reply"
+          data-image-type="icon"
+          data-object-fit="contain"
+          id="admin_login_page_back_image"
+          style="
+            height: 35px;
+            width: 40px;
+            border-style: solid;
+            border-width: 0px;
+            border-color: rgb(0, 0, 0);
+            border-radius: 0px;
+            position: absolute;
+            left: -5px;
+            top: 0px;
+            margin: 0px;
+            object-fit: contain;
+            font-family: 'object-fit: contain;';
+          "
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAIABJREFUeF7t3U+sdVd53/EnSFEGbUgYtEJKB5SgZBCpssmgDKxQGGBFCqCoCCYEFyoBEyvgCWQQG9xB4kFcI09ipILATEBOVXAkyx5AbLlSOiigSh00KiSKGgk1g0QkrYQiod4fPrd+39fvvXefffbeZ621P0uyrgV7/dnf59n+nbXWs571U6UggAACCCAwg8BPzaijCgIIIIAAAkVAOAECCCCAwCwCBGQWNpUQQAABBAgIH0AAAQQQmEWAgMzCphICCCCAAAHhAwgggAACswgQkFnYVEIAAQQQICB8AAEEEEBgFgECMgubSggggAACBIQPIIAAAgjMIkBAZmFTCQEEEECAgPABBBBAAIFZBAjILGwqIYAAAggQED6AAAIIIDCLAAGZhU0lBBBAAAECwgcQQAABBGYRICCzsKmEAAIIIEBA+AACCCCAwCwCBGQWNpUQQAABBAgIH0AAAQQQmEWAgMzCphICCCCAAAHhAwgggAACswgQkFnYVEIAAQQQICB8AAEEEEBgFgECMgubSggggAACBIQPIIAAAgjMIkBAZmFTCQEEEECAgPABBBBAAIFZBAjILGwqIYAAAggQED6AAAIIIDCLAAGZhU0lBBBAAAECwgcQQAABBGYRICCzsKmEAAIIIEBA+AACCCCAwCwCBGQWNpUQQAABBAgIH0AAAQQQmEWAgMzCphICCCCAAAHhAwgggAACswgQkFnYVEIAAQQQICB8AAEEEEBgFgECMgubSggggAACBIQPIIAAAgjMIkBAZmFTCQEEEECAgPABBBBAAIFZBAjILGwqIYAAAggQED6AAAIIIDCLAAGZhU0lBBBAAAECwgcQQAABBGYRICCzsKmEAAIIIEBA+AACCCCAwCwCBGQWNpUQQAABBAgIH0AAAQQQmEWAgMzCphICCCCAAAHhAwgggAACswgQkFnYVEIAAQQQICB8AAEEEEBgFgECMgubSggggAACBIQPIIAAAgjMIkBAZmFTCQEEEECAgPABBBBAAIFZBAjILGwqIYAAAggQED6AAAIIIDCLAAGZhU0lBBBAAAECwgcQQAABBGYRICCzsKmEAAIIIEBA+AACCCCAwCwCBGQWNpUQQAABBAgIHzgXgTdW1T+qql+o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"
+        />
+      </div>
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="cherryVanilla"
+        id="change_items_info_screen"
+        style="
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 245, 245);
+          display: none;
+        "
+      >
+        <div
+          contenteditable="false"
+          class="textArea"
+          id="change_info_items_descrption"
+          style="
+            width: 200px;
+            height: 100px;
+            border-style: solid;
+            background-color: rgb(241, 226, 212);
+            color: rgb(165, 25, 40);
+            border-color: rgb(206, 206, 204);
+            border-radius: 5px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            padding: 5px 15px;
+            position: absolute;
+            left: 60px;
+            top: 215px;
+            margin: 0px;
+            font-size: 28px;
+          "
+        ></div>
+        <input
+          id="change_stock_input"
+          style="
+            margin: 0px;
+            width: 95px;
+            height: 35px;
+            border-style: solid;
+            color: rgb(165, 25, 40);
+            background-color: rgb(241, 226, 212);
+            border-color: rgb(165, 25, 40);
+            border-radius: 5px;
+            border-width: 1px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            padding: 5px 15px;
+            position: absolute;
+            left: 30px;
+            top: 330px;
+            font-size: 14px;
+          "
+          placeholder="+/— Stock"
+        /><input
+          id="change_price_input"
+          style="
+            margin: 0px;
+            width: 95px;
+            height: 35px;
+            border-style: solid;
+            color: rgb(165, 25, 40);
+            background-color: rgb(241, 226, 212);
+            border-color: rgb(165, 25, 40);
+            border-radius: 5px;
+            border-width: 1px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            padding: 5px 15px;
+            position: absolute;
+            left: 190px;
+            top: 330px;
+            font-size: 14px;
+          "
+          placeholder="New Price"
+        /><button
+          id="change_info_submit_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 105px;
+            top: 385px;
+          "
+        >
+          Submit</button
+        ><img
+          data-canonical-image-url="icon://fa-reply"
+          data-image-type="icon"
+          data-object-fit="contain"
+          id="change_info_back_image"
+          style="
+            height: 35px;
+            width: 40px;
+            border-style: solid;
+            border-width: 0px;
+            border-color: rgb(0, 0, 0);
+            border-radius: 0px;
+            position: absolute;
+            left: -5px;
+            top: 0px;
+            margin: 0px;
+            object-fit: contain;
+            font-family: 'object-fit: contain;';
+          "
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAIABJREFUeF7t3U+sdVd53/EnSFEGbUgYtEJKB5SgZBCpssmgDKxQGGBFCqCoCCYEFyoBEyvgCWQQG9xB4kFcI09ipILATEBOVXAkyx5AbLlSOiigSh00KiSKGgk1g0QkrYQiod4fPrd+39fvvXefffbeZ621P0uyrgV7/dnf59n+nbXWs571U6UggAACCCAwg8BPzaijCgIIIIAAAkVAOAECCCCAwCwCBGQWNpUQQAABBAgIH0AAAQQQmEWAgMzCphICCCCAAAHhAwgggAACswgQkFnYVEIAAQQQICB8AAEEEEBgFgECMgubSggggAACBIQPIIAAAgjMIkBAZmFTCQEEEECAgPABBBBAAIFZBAjILGwqIYAAAggQED6AAAIIIDCLAAGZhU0lBBBAAAECwgcQQAABBGYRICCzsKmEAAIIIEBA+AACCCCAwCwCBGQWNpUQQAABBAgIH0AAAQQQmEWAgMzCphICCCCAAAHhAwgggAACswgQkFnYVEIAAQQQICB8AAEEEEBgFgECMgubSggggAACBIQPIIAAAgjMIkBAZmFTCQEEEECAgPABBBBAAIFZBAjILGwqIYAAAggQED6AAAIIIDCLAAGZhU0lBBBAAAECwgcQQAABBGYRICCzsKmEAAIIIEBA+AACCCCAwCwCBGQWNpUQQAABBAgIH0AAAQQQmEWAgMzCphICCCCAAAHhAwgggAACswgQkFnYVEIAAQQQICB8AAEEEEBgFgECMgubSggggAACBIQPIIAAAgjMIkBAZmFTCQEEEECAgPABBBBAAIFZBAjILGwqIYAAAggQED6AAAIIIDCLAAGZhU0lBBBAAAECwgcQQAABBGYRICCzsKmEAAIIIEBA+AACCCCAwCwCBGQWNpUQQAABBAgIH0AAAQQQmEWAgMzCphICCCCAAAHhAwgggAACswgQkFnYVEIAAQQQICB8AAEEEEBgFgECMgubSggggAACBIQPIIAAAgjMIkBAZmFTCQEEEECAgPABBBBAAIFZBAjILGwqIYAAAggQED6AAAIIIDCLAAGZhU0lBBBAAAECwgcQQAABBGYRICCzsKmEAAIIIEBA+AACCCCAwCwCBGQWNpUQQAABBAgIHzgXgTdW1T+qql+o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"
+        /><select
+          id="change_info_big_catagory_dropdown"
+          style="
+            width: 200px;
+            height: 30px;
+            margin: 0px;
+            border-style: solid;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23fff5f5%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E');
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 0px 30px 0px 15px;
+            position: absolute;
+            left: 60px;
+            top: 25px;
+          "
+          data-mod-padding="1"
+        >
+          <option>Please select a Catagory</option></select
+        ><select
+          id="change_info_item_dropdown"
+          style="
+            width: 200px;
+            height: 30px;
+            margin: 0px;
+            border-style: solid;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23fff5f5%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E');
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 0px 30px 0px 15px;
+            position: absolute;
+            left: 60px;
+            top: 80px;
+          "
+          data-mod-padding="1"
+        >
+          <option>Please select an item</option></select
+        ><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(165, 25, 40);
+            background-color: rgba(241, 226, 212, 0);
+            border-color: rgb(165, 25, 40);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            padding: 2px 15px;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 155px;
+            font-size: 24px;
+            top: 332px;
+          "
+          id="label1"
+          >$</label
+        ><img
+          src="/blockly/media/1x1.gif"
+          data-canonical-image-url=""
+          data-image-type=""
+          data-object-fit="contain"
+          id="change_info_items_image"
+          style="
+            height: 70px;
+            width: 75px;
+            border-style: solid;
+            border-width: 0px;
+            border-color: rgb(0, 0, 0);
+            border-radius: 0px;
+            position: absolute;
+            left: 25px;
+            top: 135px;
+            margin: 0px;
+            object-fit: contain;
+            font-family: 'object-fit: contain;';
+          "
+        /><input
+          id="change_info_items_image_input"
+          style="
+            margin: 0px;
+            width: 170px;
+            height: 30px;
+            border-style: solid;
+            color: rgb(165, 25, 40);
+            background-color: rgb(241, 226, 212);
+            border-color: rgb(165, 25, 40);
+            border-radius: 5px;
+            border-width: 1px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            padding: 5px 15px;
+            position: absolute;
+            left: 120px;
+            top: 165px;
+            font-size: 12px;
+          "
+          placeholder="Image URL (Optional)"
+        /><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(165, 25, 40);
+            background-color: rgba(241, 226, 212, 0);
+            border-color: rgb(165, 25, 40);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 12px;
+            padding: 2px 15px;
+            width: 220px;
+            height: 20px;
+            position: absolute;
+            left: 100px;
+            top: 140px;
+          "
+          id="change_info_image_label"
+          >Enter the&nbsp;items image URL below</label
+        ><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(165, 25, 40);
+            background-color: rgba(241, 226, 212, 0);
+            border-color: rgb(165, 25, 40);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            padding: 2px 15px;
+            width: 137px;
+            height: 17px;
+            position: absolute;
+            left: 0px;
+            top: 115px;
+            font-size: 10px;
+          "
+          id="label3"
+          >Preview Item Image</label
+        >
+      </div>
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="cherryVanilla"
+        id="add_items_screen"
+        style="
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 245, 245);
+          display: none;
+        "
+      >
+        <img
+          data-canonical-image-url="icon://fa-reply"
+          data-image-type="icon"
+          data-object-fit="contain"
+          id="add_items_back_page_image"
+          style="
+            height: 35px;
+            width: 40px;
+            border-style: solid;
+            border-width: 0px;
+            border-color: rgb(0, 0, 0);
+            border-radius: 0px;
+            position: absolute;
+            left: -5px;
+            top: 0px;
+            margin: 0px;
+            object-fit: contain;
+            font-family: 'object-fit: contain;';
+          "
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAIABJREFUeF7t3U+sdVd53/EnSFEGbUgYtEJKB5SgZBCpssmgDKxQGGBFCqCoCCYEFyoBEyvgCWQQG9xB4kFcI09ipILATEBOVXAkyx5AbLlSOiigSh00KiSKGgk1g0QkrYQiod4fPrd+39fvvXefffbeZ621P0uyrgV7/dnf59n+nbXWs571U6UggAACCCAwg8BPzaijCgIIIIAAAkVAOAECCCCAwCwCBGQWNpUQQAABBAgIH0AAAQQQmEWAgMzCphICCCCAAAHhAwgggAACswgQkFnYVEIAAQQQICB8AAEEEEBgFgECMgubSggggAACBIQPIIAAAgjMIkBAZmFTCQEEEECAgPABBBBAAIFZBAjILGwqIYAAAggQED6AAAIIIDCLAAGZhU0lBBBAAAECwgcQQAABBGYRICCzsKmEAAIIIEBA+AACCCCAwCwCBGQWNpUQQAABBAgIH0AAAQQQmEWAgMzCphICCCCAAAHhAwgggAACswgQkFnYVEIAAQQQICB8AAEEEEBgFgECMgubSggggAACBIQPIIAAAgjMIkBAZmFTCQEEEECAgPABBBBAAIFZBAjILGwqIYAAAggQED6AAAIIIDCLAAGZhU0lBBBAAAECwgcQQAABBGYRICCzsKmEAAIIIEBA+AACCCCAwCwCBGQWNpUQQAABBAgIH0AAAQQQmEWAgMzCphICCCCAAAHhAwgggAACswgQkFnYVEIAAQQQICB8AAEEEEBgFgECMgubSggggAACBIQPIIAAAgjMIkBAZmFTCQEEEECAgPABBBBAAIFZBAjILGwqIYAAAggQED6AAAIIIDCLAAGZhU0lBBBAAAECwgcQQAABBGYRICCzsKmEAAIIIEBA+AACCCCAwCwCBGQWNpUQQAABBAgIH0AAAQQQmEWAgMzCphICCCCAAAHhAwgggAACswgQkFnYVEIAAQQQICB8AAEEEEBgFgECMgubSggggAACBIQPIIAAAgjMIkBAZmFTCQEEEECAgPABBBBAAIFZBAjILGwqIYAAAggQED6AAAIIIDCLAAGZhU0lBBBAAAECwgcQQAABBGYRICCzsKmEAAIIIEBA+AACCCCAwCwCBGQWNpUQQAABBAgIHzgXgTdW1T+qql+o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"
+        /><select
+          id="add_items_big_catagory_dropdown"
+          style="
+            width: 270px;
+            height: 30px;
+            margin: 0px;
+            border-style: solid;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23fff5f5%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E');
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 0px 30px 0px 15px;
+            position: absolute;
+            left: 25px;
+            top: 80px;
+          "
+        >
+          <option>Please select a Catagory</option>
+        </select>
+        <div
+          contenteditable="false"
+          class="textArea"
+          id="add_items_list_display"
+          style="
+            width: 260px;
+            height: 100px;
+            border-style: solid;
+            background-color: rgb(241, 226, 212);
+            color: rgb(165, 25, 40);
+            border-color: rgb(206, 206, 204);
+            border-radius: 5px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 30px;
+            top: 220px;
+            margin: 0px;
+          "
+        ></div>
+        <input
+          id="add_catagory_input"
+          style="
+            margin: 0px;
+            width: 200px;
+            height: 30px;
+            border-style: solid;
+            color: rgb(165, 25, 40);
+            background-color: rgb(241, 226, 212);
+            border-color: rgb(165, 25, 40);
+            border-radius: 5px;
+            border-width: 1px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 30px;
+            top: 135px;
+          "
+        /><button
+          id="add_catagory_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 30px;
+            width: 55px;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 240px;
+            top: 135px;
+          "
+        >
+          Add</button
+        ><button
+          id="add_new_items_button"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 30px;
+            width: 55px;
+            background-color: rgb(165, 25, 40);
+            color: rgb(255, 245, 245);
+            border-color: rgb(206, 206, 204);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 240px;
+            top: 340px;
+          "
+        >
+          Add</button
+        ><input
+          id="add_items_input"
+          style="
+            margin: 0px;
+            width: 200px;
+            height: 30px;
+            border-style: solid;
+            color: rgb(165, 25, 40);
+            background-color: rgb(241, 226, 212);
+            border-color: rgb(165, 25, 40);
+            border-radius: 5px;
+            border-width: 1px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 30px;
+            top: 340px;
+          "
+        /><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(165, 25, 40);
+            background-color: rgba(241, 226, 212, 0);
+            border-color: rgb(165, 25, 40);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            padding: 2px 15px;
+            width: 148px;
+            height: 29px;
+            position: absolute;
+            left: 85px;
+            top: 185px;
+            font-size: 24px;
+          "
+          id="ltem_list"
+          >ltem(s) list</label
+        ><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(165, 25, 40);
+            background-color: rgba(241, 226, 212, 0);
+            border-color: rgb(165, 25, 40);
+            border-radius: 25px;
+            border-width: 0px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            padding: 2px 15px;
+            width: 194px;
+            height: 29px;
+            position: absolute;
+            left: 65px;
+            top: 40px;
+            font-size: 24px;
+          "
+          id="catagory_list"
+          >Catagory(s) list</label
+        >
+      </div>
+    </div>
+  </body>
 </html>
