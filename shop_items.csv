@@ -1,0 +1,10 @@
+id,Catagory,Items,Price,Quantity,Image
+1,Fruit,Apple,10,20,
+2,Fruit,Banana,3,4,https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg
+3,Fruit,Grape,8,10,https://www.dole.com/-/media/project/dole/produce-images/fruit/grapes_web.png?h=630&w=1200&rev=f0477eb188cb4f1ea07a564bb4da4e96&hash=787940152090DBEECE74723AF221E7F7
+4,Fruit,Durian,100,0,https://static.libertyprim.com/files/familles/durian-large.jpg?1569271756
+5,Dessert,Cake,13.99,8,http://cdn.shopify.com/s/files/1/0471/6353/9624/products/ice-cream-cakes-custom.jpg?v=1598902267
+6,Dessert,Biscuits,4.99,6,https://assets-us-01.kc-usercontent.com/4f365e04-333c-00ab-a1e0-d5cc0e128aa9/276b3590-e5be-42f0-8671-0910c34d44e3/quick_biscuits_504x434.jpg
+8,Fruit,August,3,10,https://img.lovepik.com/element/40135/6890.png_860.png
+10,Joey,Hellpo,0,,
+12,Joey,,0,,
